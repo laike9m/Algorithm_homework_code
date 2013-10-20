@@ -52,7 +52,6 @@ class GS_match():
 		for boy in self.single_boys:
 			if boy.current_gf:
 				pass
-		
 			
 		for girl in self.girls.values():
 			print('%s\'s bf is %s\n' % (girl.name, girl.current_bf.name))
@@ -76,8 +75,6 @@ class Boy():
 					return result
 				else:
 					return None
-			else:
-				pass
 				
 				
 class Girl():
