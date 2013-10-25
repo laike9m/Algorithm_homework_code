@@ -1,4 +1,7 @@
 # 用暴力法计算结果,检验其他方法的正确性
+# 包含自己的暴力算法(结果不一样)和从
+# http://codereview.stackexchange.com/questions/12922/inversion-count-using-merge-sort
+# 复制下来的算法。别人的算法和我的分治法结果相同
 
 from time import clock
 
