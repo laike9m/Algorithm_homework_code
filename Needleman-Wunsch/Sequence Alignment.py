@@ -35,7 +35,6 @@ def backtracking(OPT, seq1, seq2, i, j):
     if i == 0 and j == 0:
         return
     
-    global best_alignment
     current = OPT[i][j] 
     
     if OPT[i-1][j] + delta == current:
@@ -57,9 +56,6 @@ def backtracking(OPT, seq1, seq2, i, j):
         print('backtracking error!')
         return
         
-    
-
-
 
 if __name__ == '__main__':
     
