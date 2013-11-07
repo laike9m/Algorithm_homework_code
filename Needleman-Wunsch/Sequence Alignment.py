@@ -73,4 +73,15 @@ if __name__ == '__main__':
     global best_alignment
     best_alignment = []
     backtracking(OPT, seq1, seq2, m, n)
-    print(best_alignment)
+    print(best_alignment[::-1])
+    
+    # count the number of match, mismatch, ins/del
+    match, mismatch, ins = (0,0,0)
+    for t in best_alignment:
+        if '-' in t:
+            ins += 1
+        elif t[0] == t[1]:
+            match += 1
+        else:
+            mismatch += 1
+    print('match: %s, mismatch: %s, ins/del: %s' % (match, mismatch, ins))
