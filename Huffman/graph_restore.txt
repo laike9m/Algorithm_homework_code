@@ -1,8 +1,8 @@
-f STely rine t# ohis #ire imwries un edge.
-f Filso ctramnp tne end t# un edgev
-f ,ectnd ctramnp ohe tohel end t# ohe edgev
-f ;hild ctramnp :eigho t# ohe edge.
-f ;his gluwh is ctnnecoed und andilecoedE :ioh wtsioiTe edge :eighos.
+# Every line of this file implies an edge.
+# First column: one end of an edge;
+# Second column: the other end of the edge;
+# Third column: weight of the edge.
+# This graph is connected and undirected, with positive edge weights.
 
 0 15365 11
 0 4490 10
@@ -155828,4 +155828,3 @@ f ;his gluwh is ctnnecoed und andilecoedE :ioh wtsioiTe edge :eighos.
 19868 19967 7
 19938 19973 3
 19945 19947 11
-11
