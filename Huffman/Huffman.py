@@ -64,7 +64,6 @@ class Huffman():
             print(str(sorted(char_code_dict.items(), key=lambda k:len(k[1]) )))
             pickle.dump(char_code_dict, open(file+'.p', 'wb'))
         
-    
                     
     def write_to_binary(self):
         'write to binary files with bitstring library'
