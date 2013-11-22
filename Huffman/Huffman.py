@@ -2,6 +2,8 @@
 实现对纯英文文本文件的huffman编解码,会将编码方式输出到文件
 几个部分: 字符频率统计, 编码器, 二进制文件写入, 解码器
 
+this is the huffman-tree version
+
 INPUT: 
     serveral txt files(name), under the same directory
         
