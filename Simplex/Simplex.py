@@ -1,3 +1,6 @@
+'''
+from http://taw9.hubpages.com/hub/Simplex-Algorithm-in-Python
+'''
 from numpy import *
  
 class Tableau:
