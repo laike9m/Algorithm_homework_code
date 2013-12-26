@@ -1,0 +1,12 @@
+﻿c Problem line (nodes, links)
+p max 6 8
+c source
+n 1 s
+c sink
+n 4 t
+c Arc descriptor lines (from, to, capacity)
+a 1 2 3
+a 2 3 1
+a 3 4 2
+c
+c End of file
