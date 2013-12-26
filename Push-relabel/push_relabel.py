@@ -25,7 +25,6 @@ def InitGraph(edges, st):
             
     global nodes_has_ef
     nodes_has_ef = [id for id in G.nodes() if id not in {source,target}]
-    nodes_has_ef = ['2','3']
     print(G.nodes(data=True))
     print(G.edges(data=True))
     return G
