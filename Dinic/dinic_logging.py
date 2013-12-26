@@ -1,6 +1,5 @@
 """
 Logging functions for Dinic module.
-
 """
 
 import logging

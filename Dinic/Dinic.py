@@ -179,27 +179,37 @@ def get_corte(na):
 
 
 
-def read_edges(f=sys.stdin):
+def read_edges(filename):
     """Read edges data from standart input
     Returns a list of edges with format [first, last, capacity, flow, used]
-    """
+    """    
     edges = []
+    st = {}
     k = ['first', 'last', 'capacity', 'flow', 'used']
-    lines = f.readlines()
-    for line in lines:
-        v = [int(s) for s in line.split()] + [0, False]
-        edges.append(dict(zip(k,v)))
+    global S,T
+    
+    with open(filename, 'rt') as f:
+        for line in f.readlines():
+            if line.startswith('a'):
+                fromNode, toNode, capacity = line.split()[1:]
+                v = [int(fromNode), int(toNode), int(capacity)] + [0, False]
+                edges.append(dict(zip(k ,v)))
+            elif line.startswith('n'):
+                node, type = line.split()[1:]
+                st[type] = node
+
+    S = int(st['s'])
+    T = int(st['t']) 
     return edges
 
 
-def run_dinic(file_name):
-    f = open(file_name, "r")
-    edges = read_edges(f)
+def run_dinic(filename):
+    global S
+    edges = read_edges(filename)
     return dinic(edges)
     
 
 if __name__ == "__main__":
-    #corte, maxflow = run_dinic('numericosimple.in')
     corte, maxflow = run_dinic('input2.txt')
     print(str(corte))
     print(maxflow)
